@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(0, 8, 121);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: rgb(190, 216, 255);
+    box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+    
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: rgb(0, 8, 121);
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid rgb(0, 8, 121);
+    border-bottom: 2px solid rgb(0, 8, 121);
+    transition: 0.1s;
+}
+
+.inputBox span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: rgb(0, 8, 121);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0,8em;
+    padding: 5px 10px;
+    background: rgb(0, 8, 121);
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 2px solid rgb(0, 8, 121);
+}
+
+button{
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgb(0, 8, 121);
+}
+
+button:hover {
+    background-color: rgb(0, 8, 121);
+    color: white;
+}
+
